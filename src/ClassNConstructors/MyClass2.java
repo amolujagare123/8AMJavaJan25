@@ -1,10 +1,18 @@
 package ClassNConstructors;
 
-public class MyClass {
+public class MyClass2 {
     int a;
     double d;
     char c;
     String str;
+
+    MyClass2()
+    {
+           a = 13;
+           d = 56.67;
+           c = 'h';
+           str = "java";
+    }
 
     void display()
     {
@@ -16,22 +24,17 @@ public class MyClass {
 
     public static void main(String[] args) {
 
-        int i ;
-        i = 10;
+        MyClass2 ob = new MyClass2();
 
-        MyClass ob = new MyClass();
+        ob.display();
+
         ob.a = 10;
         ob.d = 1.90;
         ob.c = 'j';
         ob.str = "String";
+
         ob.display();
 
-        MyClass ob2 = new MyClass();
-        ob2.a = 100;
-        ob2.d = 18.90;
-        ob2.c = 'd';
-        ob2.str = "Selenium";
-        ob2.display();
 
     }
 }
