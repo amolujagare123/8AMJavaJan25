@@ -1,5 +1,7 @@
 package controlStructure;
 
+import ClassNConstructors.pack2.Java4;
+
 public class Triangle {
 
     public static void main(String[] args) {
@@ -23,6 +25,7 @@ public class Triangle {
        }
        else
            System.out.println("This is not a triangle");
+
 
     }
 }

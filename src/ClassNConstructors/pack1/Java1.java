@@ -1,9 +1,9 @@
 package ClassNConstructors.pack1;
 
 public class Java1 {
-   public int a;
+    int a;
    private double d;
-    char c;
+   protected char c;
     String str;
 
     void display()
