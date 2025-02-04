@@ -1,15 +1,10 @@
-package ClassNConstructors.pack1;
+package PublicForClass;
 
-public class Java1 {
+class MyClass {
     int a;
-   private double d;
-   protected char c;
+    double d;
+    char c;
     String str;
-
-    public Java1()
-    {
-
-    }
 
     void display()
     {
@@ -19,13 +14,22 @@ public class Java1 {
         System.out.println("str="+str);
     }
 
+
+}
+
+class AnotherClass
+{
     public static void main(String[] args) {
 
-        Java1 ob = new Java1();
+
+        MyClass ob = new MyClass();
         ob.a = 10;
         ob.d = 1.90;
         ob.c = 'j';
         ob.str = "String";
         ob.display();
+
+
+
     }
 }
