@@ -1,6 +1,6 @@
-package InheritanceDemo.Polymorphism;
+package staticNFinal;
 
-class Employee
+/*final*/ class Employee
 {
     int salary = 35000;
 
@@ -9,7 +9,7 @@ class Employee
         System.out.println("empWork");
     }
 
-    void calculateSalary(int daysPresent)
+    final void calculateSalary(int daysPresent)
     {
         salary = daysPresent * 1754;
         System.out.println("salary="+salary);
@@ -17,7 +17,7 @@ class Employee
 
 }
 
-class Programmer extends Employee
+class Programmer //extends Employee
 {
     int bonus = 15000;
 
@@ -25,8 +25,8 @@ class Programmer extends Employee
    // @Override
      void calculateSalary(int daysPresent)
     {
-        salary = daysPresent * 2500;
-        System.out.println("salary="+salary);
+       /* salary = daysPresent * 2500;
+        System.out.println("salary="+salary);*/
     }
 
     void programmerWork()
@@ -47,16 +47,16 @@ public class TestInheritance {
         System.out.println(p.bonus);
         p.programmerWork();
 
-        System.out.println(p.salary);
-        p.empWork();
+       /* System.out.println(p.salary);
+        p.empWork();*/
 
        // p.calculateSalary(22);
 
 
-        Employee e = new Programmer(); // up casting
+       // Employee e = new Programmer(); // up casting
 
 
-        e.calculateSalary(23); // overridden method
+      //  e.calculateSalary(23); // overridden method
 
 
 
