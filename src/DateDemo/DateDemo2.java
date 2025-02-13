@@ -5,16 +5,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateDemo2 {
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args)  throws ParseException
+    {
 
-        String dateStr = "23-01-2025"; // dd-MM-yyyy
+        String dateStr = "23/01/2025"; // dd-MM-yyyy
         System.out.println(dateStr);
 
         // convert string into date
 
         SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy");
-         Date myDate = sd.parse(dateStr);
-        System.out.println(myDate);
+        try {
+            Date myDate = sd.parse(dateStr);
+            System.out.println(myDate);
+        }
+        catch (Exception e)
+        {
+
+        }
 
 
 
