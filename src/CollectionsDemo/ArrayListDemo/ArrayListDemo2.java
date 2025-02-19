@@ -9,12 +9,15 @@ public class ArrayListDemo2 {
 
         ArrayList<String> al = new ArrayList<>();
 
+        System.out.println(al.isEmpty()); //
+
         al.add("amol");
         al.add("rahul");
         al.add("rohit");
         al.add("vaibhav");
         al.add("pranav");
 
+        System.out.println(al.isEmpty()); //
 
         System.out.println(al.get(4));
 
@@ -37,5 +40,9 @@ public class ArrayListDemo2 {
         Iterator itr = al.iterator();
         while(itr.hasNext())
             System.out.println(itr.next());
+
+
+        al.clear();
+        System.out.println(al);
     }
 }
